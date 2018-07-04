@@ -5,7 +5,12 @@
     align-items: center;
 }
 
+.CurrencyDetails:hover {
+    background-color: #EEEEEE;
+}
+
 .CurrencyDetails.header {
+    border-bottom: 1px solid #000;
     padding: 10px 0;
     font-weight: bold;
     background-color: #FFFFFF;

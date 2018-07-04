@@ -2,13 +2,6 @@
     padding: 20px;
 }
 
-.favorite:after {
-    clear: both;
-    content: '';
-    display: table;
-}
-
-.FavoriteCurrencies .clearAll {
-    float: right;
-    margin-top: 10px;
+.loader {
+    margin-top: 50px;
 }

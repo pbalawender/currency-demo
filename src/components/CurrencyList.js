@@ -6,7 +6,12 @@ import CurrencyDetails from './CurrencyDetails';
 export default class CurrencyList extends PureComponent {
 
     static propTypes = {
-        currencies: PropTypes.array.isRequired,
+        currencies: PropTypes.arrayOf(PropTypes.shape({
+            code: PropTypes.string.isRequired,
+            currency: PropTypes.string,
+            mid: PropTypes.number,
+            favorite: PropTypes.bool
+        })).isRequired,
         toggleFavorite: PropTypes.func.isRequired
     };
 

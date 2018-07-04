@@ -8,8 +8,16 @@ import thunk from 'redux-thunk'
 const mockStore = configureMockStore([thunk]);
 const store = mockStore({
     currencies: {
-        all: [],
-        favoriteCodes: [],
+        all: [{
+            currency: 'dolar amerykański',
+            code: 'USD',
+            mid: 3.7759
+        },{
+            currency: 'dolar australijski',
+            code: 'USD',
+            mid: 2.7891
+        }],
+        favoriteCodes: ['USD'],
         loading: false
     }
 });
