@@ -6,8 +6,8 @@ import CurrencyDetails from './CurrencyDetails';
 export default class CurrencyList extends PureComponent {
 
     static propTypes = {
-        currencies: PropTypes.array,
-        toggleFavorite: PropTypes.func
+        currencies: PropTypes.array.isRequired,
+        toggleFavorite: PropTypes.func.isRequired
     };
 
     render() {
