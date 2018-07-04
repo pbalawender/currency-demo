@@ -1,0 +1,36 @@
+.CurrencyDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CurrencyDetails:hover {
+    background-color: #EEEEEE;
+}
+
+.CurrencyDetails.header {
+    border-bottom: 1px solid #000;
+    padding: 10px 0;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.CurrencyDetails .code {
+    text-align: left;
+    flex-basis: 60px;
+}
+
+.CurrencyDetails .currency {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.CurrencyDetails .mid {
+    text-align: right;
+}
+
+.CurrencyDetails .favorite {
+    margin: 0;
+    flex-basis: 48px;
+}

@@ -1,0 +1,12 @@
+.Favorite {
+
+}
+
+.Favorite .clearAll {
+    float: right;
+    margin-top: 10px;
+}
+
+.Favorite .empty {
+    border: 1px dashed #DEDEDE;
+}
