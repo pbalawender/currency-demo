@@ -1,0 +1,488 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`FavoriteCurrencies component renders correctly while loading data 1`] = `
+<div
+  className="MuiCircularProgress-root-84 MuiCircularProgress-colorPrimary-87 MuiCircularProgress-indeterminate-86 loader"
+  role="progressbar"
+  style={
+    Object {
+      "height": 80,
+      "width": 80,
+    }
+  }
+>
+  <svg
+    className="MuiCircularProgress-svg-89"
+    viewBox="22 22 44 44"
+  >
+    <circle
+      className="MuiCircularProgress-circle-90 MuiCircularProgress-circleIndeterminate-92"
+      cx={44}
+      cy={44}
+      fill="none"
+      r={20.2}
+      strokeWidth={3.6}
+      style={Object {}}
+    />
+  </svg>
+</div>
+`;
+
+exports[`FavoriteCurrencies component renders correctly with empty list 1`] = `
+<div
+  className="FavoriteCurrencies"
+>
+  <h2>
+    My favorite
+  </h2>
+  <h3
+    className="empty"
+  >
+    Start watching currency by selecting 
+    <svg
+      aria-hidden="true"
+      className="MuiSvgIcon-root-1"
+      color={undefined}
+      focusable="false"
+      viewBox="0 0 24 24"
+    >
+      <g>
+        <path
+          d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+        />
+      </g>
+    </svg>
+     on the list below 
+  </h3>
+  <h2>
+    All currencies
+  </h2>
+  <div
+    className="CurrencyList"
+  >
+    <div
+      className="CurrencyDetails header"
+    >
+      <div
+        className="code"
+      >
+        Code
+      </div>
+      <div
+        className="currency"
+      >
+        Currency name
+      </div>
+      <div
+        className="mid"
+      >
+        Rate
+      </div>
+      <div
+        className="favorite"
+      >
+         
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] = `
+<div
+  className="FavoriteCurrencies"
+>
+  <h2>
+    My favorite
+  </h2>
+  <div
+    className="Favorite clearfix"
+  >
+    <div
+      className="CurrencyList"
+    >
+      <div
+        className="CurrencyDetails header"
+      >
+        <div
+          className="code"
+        >
+          Code
+        </div>
+        <div
+          className="currency"
+        >
+          Currency name
+        </div>
+        <div
+          className="mid"
+        >
+          Rate
+        </div>
+        <div
+          className="favorite"
+        >
+           
+        </div>
+      </div>
+      <div
+        className="CurrencyDetails"
+      >
+        <div
+          className="code"
+        >
+          USD
+        </div>
+        <div
+          className="currency"
+        >
+          dolar amerykański
+        </div>
+        <div
+          className="mid"
+        >
+          3.7759
+        </div>
+        <label
+          className="MuiFormControlLabel-root-8 favorite"
+        >
+          <span
+            className="MuiButtonBase-root-26 MuiIconButton-root-20 MuiSwitchBase-root-16 MuiCheckbox-root-11 MuiCheckbox-colorSecondary-15 MuiSwitchBase-checked-17 MuiCheckbox-checked-12"
+            onBlur={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            role={undefined}
+            tabIndex={null}
+          >
+            <span
+              className="MuiIconButton-label-25"
+            >
+              <svg
+                aria-hidden="true"
+                className="MuiSvgIcon-root-1"
+                color={undefined}
+                focusable="false"
+                viewBox="0 0 24 24"
+              >
+                <g>
+                  <path
+                    d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                  />
+                </g>
+              </svg>
+              <input
+                checked={true}
+                className="MuiSwitchBase-input-19"
+                disabled={undefined}
+                id={undefined}
+                name={undefined}
+                onChange={[Function]}
+                tabIndex={undefined}
+                type="checkbox"
+                value="USD"
+              />
+            </span>
+            <span
+              className="MuiTouchRipple-root-29"
+            />
+          </span>
+          <span
+            className="MuiTypography-root-36 MuiTypography-body1-45 MuiFormControlLabel-label-10"
+          >
+            
+          </span>
+        </label>
+      </div>
+    </div>
+    <button
+      className="MuiButtonBase-root-26 MuiButton-root-60 MuiButton-text-62 MuiButton-flat-65 clearAll"
+      disabled={false}
+      onBlur={[Function]}
+      onClick={[Function]}
+      onFocus={[Function]}
+      onKeyDown={[Function]}
+      onKeyUp={[Function]}
+      onMouseDown={[Function]}
+      onMouseLeave={[Function]}
+      onMouseUp={[Function]}
+      onTouchEnd={[Function]}
+      onTouchMove={[Function]}
+      onTouchStart={[Function]}
+      tabIndex="0"
+      type="button"
+    >
+      <span
+        className="MuiButton-label-61"
+      >
+        Clear all
+      </span>
+      <span
+        className="MuiTouchRipple-root-29"
+      />
+    </button>
+  </div>
+  <h2>
+    All currencies
+  </h2>
+  <div
+    className="CurrencyList"
+  >
+    <div
+      className="CurrencyDetails header"
+    >
+      <div
+        className="code"
+      >
+        Code
+      </div>
+      <div
+        className="currency"
+      >
+        Currency name
+      </div>
+      <div
+        className="mid"
+      >
+        Rate
+      </div>
+      <div
+        className="favorite"
+      >
+         
+      </div>
+    </div>
+    <div
+      className="CurrencyDetails"
+    >
+      <div
+        className="code"
+      >
+        THB
+      </div>
+      <div
+        className="currency"
+      >
+        bat (Tajlandia)
+      </div>
+      <div
+        className="mid"
+      >
+        0.114
+      </div>
+      <label
+        className="MuiFormControlLabel-root-8 favorite"
+      >
+        <span
+          className="MuiButtonBase-root-26 MuiIconButton-root-20 MuiSwitchBase-root-16 MuiCheckbox-root-11 MuiCheckbox-colorSecondary-15"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={undefined}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label-25"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-1"
+              color={undefined}
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g>
+                <path
+                  d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+                />
+              </g>
+            </svg>
+            <input
+              checked={false}
+              className="MuiSwitchBase-input-19"
+              disabled={undefined}
+              id={undefined}
+              name={undefined}
+              onChange={[Function]}
+              tabIndex={undefined}
+              type="checkbox"
+              value="THB"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root-29"
+          />
+        </span>
+        <span
+          className="MuiTypography-root-36 MuiTypography-body1-45 MuiFormControlLabel-label-10"
+        >
+          
+        </span>
+      </label>
+    </div>
+    <div
+      className="CurrencyDetails"
+    >
+      <div
+        className="code"
+      >
+        USD
+      </div>
+      <div
+        className="currency"
+      >
+        dolar amerykański
+      </div>
+      <div
+        className="mid"
+      >
+        3.7759
+      </div>
+      <label
+        className="MuiFormControlLabel-root-8 favorite"
+      >
+        <span
+          className="MuiButtonBase-root-26 MuiIconButton-root-20 MuiSwitchBase-root-16 MuiCheckbox-root-11 MuiCheckbox-colorSecondary-15 MuiSwitchBase-checked-17 MuiCheckbox-checked-12"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={undefined}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label-25"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-1"
+              color={undefined}
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g>
+                <path
+                  d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"
+                />
+              </g>
+            </svg>
+            <input
+              checked={true}
+              className="MuiSwitchBase-input-19"
+              disabled={undefined}
+              id={undefined}
+              name={undefined}
+              onChange={[Function]}
+              tabIndex={undefined}
+              type="checkbox"
+              value="USD"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root-29"
+          />
+        </span>
+        <span
+          className="MuiTypography-root-36 MuiTypography-body1-45 MuiFormControlLabel-label-10"
+        >
+          
+        </span>
+      </label>
+    </div>
+    <div
+      className="CurrencyDetails"
+    >
+      <div
+        className="code"
+      >
+        AUD
+      </div>
+      <div
+        className="currency"
+      >
+        dolar australijski
+      </div>
+      <div
+        className="mid"
+      >
+        2.7891
+      </div>
+      <label
+        className="MuiFormControlLabel-root-8 favorite"
+      >
+        <span
+          className="MuiButtonBase-root-26 MuiIconButton-root-20 MuiSwitchBase-root-16 MuiCheckbox-root-11 MuiCheckbox-colorSecondary-15"
+          onBlur={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          role={undefined}
+          tabIndex={null}
+        >
+          <span
+            className="MuiIconButton-label-25"
+          >
+            <svg
+              aria-hidden="true"
+              className="MuiSvgIcon-root-1"
+              color={undefined}
+              focusable="false"
+              viewBox="0 0 24 24"
+            >
+              <g>
+                <path
+                  d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"
+                />
+              </g>
+            </svg>
+            <input
+              checked={false}
+              className="MuiSwitchBase-input-19"
+              disabled={undefined}
+              id={undefined}
+              name={undefined}
+              onChange={[Function]}
+              tabIndex={undefined}
+              type="checkbox"
+              value="AUD"
+            />
+          </span>
+          <span
+            className="MuiTouchRipple-root-29"
+          />
+        </span>
+        <span
+          className="MuiTypography-root-36 MuiTypography-body1-45 MuiFormControlLabel-label-10"
+        >
+          
+        </span>
+      </label>
+    </div>
+  </div>
+</div>
+`;
