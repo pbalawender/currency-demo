@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from "react-redux";
 import './FavoriteCurrencies.css';
 import {clearFavoriteCurrencies, fetchCurrenciesList, toggleFavoriteCurrency} from "../actions";
+import CurrencyList from "../components/CurrencyList";
 
 class FavoriteCurrencies extends Component {
 
@@ -23,9 +24,14 @@ class FavoriteCurrencies extends Component {
         if (this.props.loading) {
             return "Loading...";
         }
+
+        const currenciesExt = this.props.all.map((currency) => ({...currency, favorite: this.props.favoriteCodes.includes(currency.code)}));
+
         return (
             <div className="FavoriteCurrencies">
-                {this.props.all.map((c) => <p key={c.code}>{c.code} - {c.currency}</p>)}
+                <h2>All currencies</h2>
+                <CurrencyList currencies={currenciesExt}
+                              toggleFavorite={this.props.toggleFavoriteCurrency}/>
             </div>
         );
     }

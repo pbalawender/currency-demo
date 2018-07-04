@@ -1,0 +1,31 @@
+.CurrencyDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.CurrencyDetails.header {
+    padding: 10px 0;
+    font-weight: bold;
+    background-color: #FFFFFF;
+}
+
+.CurrencyDetails .code {
+    text-align: left;
+    flex-basis: 60px;
+}
+
+.CurrencyDetails .currency {
+    text-align: left;
+    flex-grow: 1;
+}
+
+.CurrencyDetails .mid {
+    text-align: right;
+}
+
+.CurrencyDetails .favorite {
+    margin: 0;
+    flex-basis: 48px;
+}
