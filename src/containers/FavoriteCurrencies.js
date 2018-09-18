@@ -6,16 +6,23 @@ import {clearFavoriteCurrencies, fetchCurrenciesList, toggleFavoriteCurrency} fr
 import CurrencyList from '../components/CurrencyList';
 import Favorite from '../components/Favorite';
 import CircularProgress from '@material-ui/core/CircularProgress';
+import { getCurrencies, getFavoriteCurrencies } from '../selectors';
 
 class FavoriteCurrencies extends Component {
 
     static propTypes = {
-        all: PropTypes.arrayOf(PropTypes.shape({
+        currencies: PropTypes.arrayOf(PropTypes.shape({
             code: PropTypes.string.isRequired,
             currency: PropTypes.string,
-            mid: PropTypes.number
+            mid: PropTypes.number,
+            favorite: PropTypes.bool
         })).isRequired,
-        favoriteCodes: PropTypes.array.isRequired,
+        favoriteCurrencies: PropTypes.arrayOf(PropTypes.shape({
+            code: PropTypes.string.isRequired,
+            currency: PropTypes.string,
+            mid: PropTypes.number,
+            favorite: PropTypes.bool
+        })).isRequired,
         loading: PropTypes.bool,
         fetchCurrenciesList: PropTypes.func.isRequired,
         toggleFavoriteCurrency: PropTypes.func.isRequired,
@@ -31,19 +38,14 @@ class FavoriteCurrencies extends Component {
             return <CircularProgress className="loader" size={80} />;
         }
 
-        const currenciesExt = this.props.all.map((currency) => ({
-            ...currency,
-            favorite: this.props.favoriteCodes.includes(currency.code)
-        }));
-
         return (
             <div className="FavoriteCurrencies">
                 <h2>My favorite</h2>
-                <Favorite favoriteCurrencies={currenciesExt.filter((currency) => currency.favorite)}
+                <Favorite favoriteCurrencies={this.props.favoriteCurrencies}
                           toggleFavorite={this.props.toggleFavoriteCurrency}
                           clearFavorite={this.props.clearFavoriteCurrencies}/>
                 <h2>All currencies</h2>
-                <CurrencyList currencies={currenciesExt}
+                <CurrencyList currencies={this.props.currencies}
                               toggleFavorite={this.props.toggleFavoriteCurrency}/>
             </div>
         );
@@ -52,8 +54,8 @@ class FavoriteCurrencies extends Component {
 
 
 const mapsStateToProps = (state) => ({
-    all: state.currencies.all,
-    favoriteCodes: state.currencies.favoriteCodes,
+    currencies: getCurrencies(state),
+    favoriteCurrencies: getFavoriteCurrencies(state),
     loading: state.currencies.loading
 });
 
