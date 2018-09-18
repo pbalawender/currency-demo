@@ -2,7 +2,7 @@
 
 exports[`FavoriteCurrencies component renders correctly while loading data 1`] = `
 <div
-  className="MuiCircularProgress-root-84 MuiCircularProgress-colorPrimary-87 MuiCircularProgress-indeterminate-86 loader"
+  className="MuiCircularProgress-root-88 MuiCircularProgress-colorPrimary-91 MuiCircularProgress-indeterminate-90 loader"
   role="progressbar"
   style={
     Object {
@@ -12,11 +12,11 @@ exports[`FavoriteCurrencies component renders correctly while loading data 1`] =
   }
 >
   <svg
-    className="MuiCircularProgress-svg-89"
+    className="MuiCircularProgress-svg-93"
     viewBox="22 22 44 44"
   >
     <circle
-      className="MuiCircularProgress-circle-90 MuiCircularProgress-circleIndeterminate-92"
+      className="MuiCircularProgress-circle-94 MuiCircularProgress-circleIndeterminate-96"
       cx={44}
       cy={44}
       fill="none"
@@ -147,7 +147,7 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
           className="MuiFormControlLabel-root-8 favorite"
         >
           <span
-            className="MuiButtonBase-root-26 MuiIconButton-root-20 MuiSwitchBase-root-16 MuiCheckbox-root-11 MuiCheckbox-colorSecondary-15 MuiSwitchBase-checked-17 MuiCheckbox-checked-12"
+            className="MuiButtonBase-root-27 MuiIconButton-root-21 MuiSwitchBase-root-17 MuiCheckbox-root-12 MuiCheckbox-colorSecondary-16 MuiSwitchBase-checked-18 MuiCheckbox-checked-13"
             onBlur={[Function]}
             onFocus={[Function]}
             onKeyDown={[Function]}
@@ -162,7 +162,7 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
             tabIndex={null}
           >
             <span
-              className="MuiIconButton-label-25"
+              className="MuiIconButton-label-26"
             >
               <svg
                 aria-hidden="true"
@@ -178,23 +178,26 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
                 </g>
               </svg>
               <input
+                autoFocus={undefined}
                 checked={true}
-                className="MuiSwitchBase-input-19"
+                className="MuiSwitchBase-input-20"
                 disabled={undefined}
                 id={undefined}
                 name={undefined}
                 onChange={[Function]}
+                readOnly={undefined}
+                required={undefined}
                 tabIndex={undefined}
                 type="checkbox"
                 value="USD"
               />
             </span>
             <span
-              className="MuiTouchRipple-root-29"
+              className="MuiTouchRipple-root-30"
             />
           </span>
           <span
-            className="MuiTypography-root-36 MuiTypography-body1-45 MuiFormControlLabel-label-10"
+            className="MuiTypography-root-37 MuiTypography-body1-46 MuiFormControlLabel-label-11"
           >
             
           </span>
@@ -202,7 +205,7 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
       </div>
     </div>
     <button
-      className="MuiButtonBase-root-26 MuiButton-root-60 MuiButton-text-62 MuiButton-flat-65 clearAll"
+      className="MuiButtonBase-root-27 MuiButton-root-62 MuiButton-text-64 MuiButton-flat-67 clearAll"
       disabled={false}
       onBlur={[Function]}
       onClick={[Function]}
@@ -219,12 +222,12 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
       type="button"
     >
       <span
-        className="MuiButton-label-61"
+        className="MuiButton-label-63"
       >
         Clear all
       </span>
       <span
-        className="MuiTouchRipple-root-29"
+        className="MuiTouchRipple-root-30"
       />
     </button>
   </div>
@@ -280,7 +283,7 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
         className="MuiFormControlLabel-root-8 favorite"
       >
         <span
-          className="MuiButtonBase-root-26 MuiIconButton-root-20 MuiSwitchBase-root-16 MuiCheckbox-root-11 MuiCheckbox-colorSecondary-15"
+          className="MuiButtonBase-root-27 MuiIconButton-root-21 MuiSwitchBase-root-17 MuiCheckbox-root-12 MuiCheckbox-colorSecondary-16"
           onBlur={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -295,7 +298,7 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
           tabIndex={null}
         >
           <span
-            className="MuiIconButton-label-25"
+            className="MuiIconButton-label-26"
           >
             <svg
               aria-hidden="true"
@@ -311,23 +314,26 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
               </g>
             </svg>
             <input
+              autoFocus={undefined}
               checked={false}
-              className="MuiSwitchBase-input-19"
+              className="MuiSwitchBase-input-20"
               disabled={undefined}
               id={undefined}
               name={undefined}
               onChange={[Function]}
+              readOnly={undefined}
+              required={undefined}
               tabIndex={undefined}
               type="checkbox"
               value="THB"
             />
           </span>
           <span
-            className="MuiTouchRipple-root-29"
+            className="MuiTouchRipple-root-30"
           />
         </span>
         <span
-          className="MuiTypography-root-36 MuiTypography-body1-45 MuiFormControlLabel-label-10"
+          className="MuiTypography-root-37 MuiTypography-body1-46 MuiFormControlLabel-label-11"
         >
           
         </span>
@@ -355,7 +361,7 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
         className="MuiFormControlLabel-root-8 favorite"
       >
         <span
-          className="MuiButtonBase-root-26 MuiIconButton-root-20 MuiSwitchBase-root-16 MuiCheckbox-root-11 MuiCheckbox-colorSecondary-15 MuiSwitchBase-checked-17 MuiCheckbox-checked-12"
+          className="MuiButtonBase-root-27 MuiIconButton-root-21 MuiSwitchBase-root-17 MuiCheckbox-root-12 MuiCheckbox-colorSecondary-16 MuiSwitchBase-checked-18 MuiCheckbox-checked-13"
           onBlur={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -370,7 +376,7 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
           tabIndex={null}
         >
           <span
-            className="MuiIconButton-label-25"
+            className="MuiIconButton-label-26"
           >
             <svg
               aria-hidden="true"
@@ -386,23 +392,26 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
               </g>
             </svg>
             <input
+              autoFocus={undefined}
               checked={true}
-              className="MuiSwitchBase-input-19"
+              className="MuiSwitchBase-input-20"
               disabled={undefined}
               id={undefined}
               name={undefined}
               onChange={[Function]}
+              readOnly={undefined}
+              required={undefined}
               tabIndex={undefined}
               type="checkbox"
               value="USD"
             />
           </span>
           <span
-            className="MuiTouchRipple-root-29"
+            className="MuiTouchRipple-root-30"
           />
         </span>
         <span
-          className="MuiTypography-root-36 MuiTypography-body1-45 MuiFormControlLabel-label-10"
+          className="MuiTypography-root-37 MuiTypography-body1-46 MuiFormControlLabel-label-11"
         >
           
         </span>
@@ -430,7 +439,7 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
         className="MuiFormControlLabel-root-8 favorite"
       >
         <span
-          className="MuiButtonBase-root-26 MuiIconButton-root-20 MuiSwitchBase-root-16 MuiCheckbox-root-11 MuiCheckbox-colorSecondary-15"
+          className="MuiButtonBase-root-27 MuiIconButton-root-21 MuiSwitchBase-root-17 MuiCheckbox-root-12 MuiCheckbox-colorSecondary-16"
           onBlur={[Function]}
           onFocus={[Function]}
           onKeyDown={[Function]}
@@ -445,7 +454,7 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
           tabIndex={null}
         >
           <span
-            className="MuiIconButton-label-25"
+            className="MuiIconButton-label-26"
           >
             <svg
               aria-hidden="true"
@@ -461,23 +470,26 @@ exports[`FavoriteCurrencies component renders correctly with non-empty list 1`] 
               </g>
             </svg>
             <input
+              autoFocus={undefined}
               checked={false}
-              className="MuiSwitchBase-input-19"
+              className="MuiSwitchBase-input-20"
               disabled={undefined}
               id={undefined}
               name={undefined}
               onChange={[Function]}
+              readOnly={undefined}
+              required={undefined}
               tabIndex={undefined}
               type="checkbox"
               value="AUD"
             />
           </span>
           <span
-            className="MuiTouchRipple-root-29"
+            className="MuiTouchRipple-root-30"
           />
         </span>
         <span
-          className="MuiTypography-root-36 MuiTypography-body1-45 MuiFormControlLabel-label-10"
+          className="MuiTypography-root-37 MuiTypography-body1-46 MuiFormControlLabel-label-11"
         >
           
         </span>

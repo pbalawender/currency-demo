@@ -16,7 +16,7 @@
     "reselect": "^3.0.1"
   },
   "devDependencies": {
-    "fetch-mock": "^6.5.2",
+    "jest-fetch-mock": "^1.6.6",
     "react-test-renderer": "^16.5.1",
     "redux-mock-store": "^1.5.3"
   },

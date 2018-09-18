@@ -13,20 +13,20 @@ describe('CurrencyList component', () => {
 
     it('renders correctly with non-empty list', () => {
         const mockData = [{
-            rates: [{
-                currency: 'bat (Tajlandia)',
-                code: 'THB',
-                mid: 0.1140
-            }, {
-                currency: 'dolar amerykański',
-                code: 'USD',
-                mid: 3.7759,
-                favorite: true
-            }, {
-                currency: 'dolar australijski',
-                code: 'AUD',
-                mid: 2.7891
-            }]
+            currency: 'bat (Tajlandia)',
+            code: 'THB',
+            mid: 0.1140,
+            favorite: false
+        }, {
+            currency: 'dolar amerykański',
+            code: 'USD',
+            mid: 3.7759,
+            favorite: true
+        }, {
+            currency: 'dolar australijski',
+            code: 'AUD',
+            mid: 2.7891,
+            favorite: false
         }];
         const tree = renderer.create(
             <CurrencyList currencies={mockData}

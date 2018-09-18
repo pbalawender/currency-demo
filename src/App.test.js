@@ -14,7 +14,7 @@ const store = mockStore({
             mid: 3.7759
         },{
             currency: 'dolar australijski',
-            code: 'USD',
+            code: 'AUD',
             mid: 2.7891
         }],
         favoriteCodes: ['USD'],

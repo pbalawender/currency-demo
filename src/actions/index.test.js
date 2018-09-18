@@ -1,14 +1,12 @@
 import configureMockStore from 'redux-mock-store';
 import thunk from 'redux-thunk'
-import fetchMock from 'fetch-mock';
 import * as actions from './index';
 
 const mockStore = configureMockStore([thunk]);
 
 describe('actions', () => {
-    afterEach(() => {
-        fetchMock.reset();
-        fetchMock.restore();
+    beforeEach(() => {
+        fetch.resetMocks();
     });
 
     it('creates FETCH_CURRENCIES_LIST_FINISHED action after successful api call', () => {
@@ -29,10 +27,7 @@ describe('actions', () => {
             }]
         }];
 
-        fetchMock.getOnce('http://api.nbp.pl/api/exchangerates/tables/a?format=json', {
-            body: mockData,
-            headers: {'content-type': 'application/json'}
-        });
+        fetch.mockResponseOnce(JSON.stringify(mockData));
 
         const expectedActions = [
             {type: actions.FETCH_CURRENCIES_LIST_STARTED},
@@ -49,10 +44,7 @@ describe('actions', () => {
 
         const mockData = [];
 
-        fetchMock.getOnce('http://api.nbp.pl/api/exchangerates/tables/a?format=json', {
-            body: mockData,
-            headers: {'content-type': 'application/json'}
-        });
+        fetch.mockResponseOnce(JSON.stringify(mockData));
 
         const expectedActions = [
             {type: actions.FETCH_CURRENCIES_LIST_STARTED},
@@ -66,11 +58,7 @@ describe('actions', () => {
     });
 
     it('creates FETCH_CURRENCIES_LIST_FAILED action after failed api call', () => {
-
-        fetchMock.getOnce('http://api.nbp.pl/api/exchangerates/tables/a?format=json', {
-            body: "Mocked error on API side",
-            status: 400
-        });
+        fetch.mockRejectOnce(new Error('Mocked error on API side'));
 
         const expectedActions = [
             {type: actions.FETCH_CURRENCIES_LIST_STARTED},
